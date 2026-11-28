@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entomofauna de Sergipe</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon.ico">
+    <title>Guia de Insetos de Itabaiana - SE</title>
+    <link rel="icon" type="image/png" href="imgs/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <img src="imgs/ifs.png" alt="Logo do IFS">
+        <img src="imgs/ifs.png" alt="Logo Entomofauna">
         <div class="header-texto">
             <h1>Entomofauna de Sergipe</h1>
             <p>Guia digital de identificação dos insetos de Areia Branca e região</p>
@@ -18,21 +18,16 @@
     </header>
 
     <main>
-        <section class="controles"> 
-            
-            <div class="filtros">
-                <button class="btn-filtro ativo" data-categoria="todos">Todos</button>
-                <button class="btn-filtro" data-categoria="arachnida">Aranhas (Arachnidas)</button>
-                <button class="btn-filtro" data-categoria="insecta">Insetos (Insectas)</button>
-            </div>
-        </section>
+        <nav class="navegacao-secoes" aria-label="Seções do guia">
+            <a href="index.html" class="btn-nav ativo" data-nav="especies">Espécies Catalogadas</a>
+            <a href="grupos.html" class="btn-nav" data-nav="grupos">Filos e Ordens (Características)</a>
+        </nav>
 
         <section class="grade-insetos" id="lista-insetos">
-            
-            <article class="card-inseto" data-categoria="arachnida">
+            <article class="card-inseto">
                 <img src="imgs/aranha-saltadora.jpg" alt="Aranha Saltadora">
                 <div class="card-conteudo">
-                    <span class="tag-ordem">Arachnida</span>
+                    <span class="tag-ordem">Insecta</span>
                     <h2>Aranha Saltadora</h2>
                     <p class="nome-cientifico">Plexippus paykulli</p>
                     <p class="descricao">Aracnídeo de porte pequeno a médio, corpo compacto e pernas curtas e robustas adaptadas ao salto por pressão hidráulica. Possui oito olhos, com o par frontal ampliado que confere visão de alta resolução e percepção de profundidade para caça. Não utiliza teias geométricas para captura de presas, fixando apenas um fio de seda como linha de segurança antes de saltar.</p>
@@ -44,7 +39,7 @@
                 </div>
             </article>
 
-            <article class="card-inseto" data-categoria="insecta">
+            <article class="card-inseto">
                 <img src="imgs/abelha-centris.jpg" alt="Abelha Centridini (Apidae)">
                 <div class="card-conteudo">
                     <span class="tag-ordem">Insecta</span>
@@ -59,12 +54,12 @@
                 </div>
             </article>
 
-            <article class="card-inseto" data-categoria="insecta">
+            <article class="card-inseto">
                 <img src="imgs/borboleta-da-couve.png" alt="Borboleta da Couve">
                 <div class="card-conteudo">
                     <span class="tag-ordem">Insecta</span>
                     <h2>Borboleta da Couve</h2>
-                    <p class="nome-cientifico">Ascia Monuste</p>
+                    <p class="nome-cientifico">Ascia monuste</p>
                     <p class="descricao">Uma borboleta de porte médio da família Pieridae, amplamente distribuída pelas Américas, desde o sul dos Estados Unidos até a Argentina. Possui asas predominantemente brancas ou levemente amareladas com bordas externas serrilhadas de coloração marrom-escura ou preta, além de antenas longas com pontas escuras e olhos avermelhados. É uma espécie migratória muito comum em áreas urbanas, jardins e regiões agrícolas.</p>
                     <ul class="ficha-tecnica">
                         <li><strong>Habitat:</strong> Ambientes abertos, bordas de matas, áreas urbanas, jardins e plantações agrícolas (especialmente hortas de brássicas, como couve, repolho e brócolis).</li>
@@ -74,7 +69,7 @@
                 </div>
             </article>
 
-            <article class="card-inseto" data-categoria="insecta">
+            <article class="card-inseto">
                 <img src="imgs/louva-deus-ninfa.png" alt="Louva-a-deus (ninfa)">
                 <div class="card-conteudo">
                     <span class="tag-ordem">Insecta</span>
@@ -88,13 +83,13 @@
                     </ul>
                 </div>
             </article>
-
         </section>
     </main>
 
     <footer>
         <p>Desenvolvido por Nathália, Idelmar, Vitor, Lucas e Yuri</p>
-        <p>Projeto de catalogação biológica - Itabaiana, Sergipe</p>
+        <p>Orientação/Supervisão: Profa. Dra. Maise Silva</p>
+        <p>Colaboração: Ane Marcela das Chagas Mendonça</p>
     </footer>
 
     <script src="script.js"></script>
